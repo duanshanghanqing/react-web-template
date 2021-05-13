@@ -1,0 +1,6 @@
+export default {
+  getDefaultProps() {
+    return {
+    };
+  },
+};

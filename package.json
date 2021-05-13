@@ -1,0 +1,39 @@
+{
+  "name": "react-web",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "danae-scripts start",
+    "build": "danae-scripts build"
+  },
+  "dependencies": {
+    "antd": "^4.15.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-mixin": "^5.0.0",
+    "react-redux": "^7.2.4",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.1.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.1%",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.5",
+    "@types/react-dom": "^17.0.3",
+    "@types/react-redux": "^7.1.16",
+    "@types/react-router-dom": "^5.1.7",
+    "danae-scripts": "^0.1.2"
+  }
+}
