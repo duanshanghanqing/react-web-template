@@ -10,7 +10,7 @@ import 'antd/dist/antd.min.css';
 
 const store = configureStore();
 
-export default class extends React.Component {
+class App extends React.Component {
   render() {
     return (
       <ConfigProvider locale={zhCN}>
@@ -23,3 +23,5 @@ export default class extends React.Component {
     );
   }
 }
+
+export default App;
