@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import * as CounterActions from './store/actions';
+import { actions } from './store';
 
 class Counter extends React.Component<{
   counter: number,
@@ -8,15 +8,9 @@ class Counter extends React.Component<{
   incrementIfOdd: any,
   incrementAsync: any,
   decrement: any,
-}, {
-  isChecked: boolean
-}> {
+}, {}> {
   constructor(props) {
     super(props);
-  }
-  incrementAsync = () => {
-    const { incrementAsync } = this.props;
-    incrementAsync();
   }
   render() {
     const { increment, incrementIfOdd, incrementAsync, decrement, counter, } = this.props;
@@ -30,10 +24,10 @@ class Counter extends React.Component<{
         {' '}
         <button type="button" onClick={incrementIfOdd}>Increment if odd</button>
         {' '}
-        <button type="button" onClick={this.incrementAsync}>Increment async</button>
+        <button type="button" onClick={incrementAsync}>Increment async</button>
       </p>
     );
   }
 }
 
-export default connect(state => ({ ...state }), { ...CounterActions })(Counter);
+export default connect(state => state, actions)(Counter);
